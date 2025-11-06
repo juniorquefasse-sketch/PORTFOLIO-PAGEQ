@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+            background-image: url(fundo1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+                }
+        
+ /* animacao no titulo*/
+                header h1{
+                    transition: transform 0.3s ease;
+                }
+
+                 header h1:hover {
+                    transform: scale(1.05);
+                 }
+    
+        header {
+            background-color: #060b0b;
+            color: rgb(20, 160, 153);
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav{
+         background-color: #333333;
+         padding: 10px;
+
+        }
+
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: none; /* server para adicionar e remover os sublinhados*/
+            color: blue;
+        }
+
+        /* Botão voltar ao topo */
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #14a099;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.voltar-topo:hover {
+    background-color: #155ebe;
+}
+        /* Foto de perfil */
+        .profile-pic {
+            width: 190px;
+            height: 190px;
+            border-radius: 90%; /* deixa a imagem redonda */
+            object-fit: cover; /* ajusta a imagem sem distorcer */
+            border: 5px solid rgb(255, 255, 255);/* muda a cor da borda*/
+            background-color: white;
+
+        }
+        .profile-container{
+            text-align: center;
+        }
+
+         /* Seção de conteúdo */
+         
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        font-size: 45px;
+        
+            
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: pink;
+            padding: 15px;
+            border-radius: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+
+
+        /* Formulário de contacto */
+    
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        button {
+            background: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: none;
+        }
+         /* Links de redes sociais */
+         .social-links{
+            text-align: center;
+         }
+        .social-links a {
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+           
+       
+        }
+
+        .social-links a:hover {
+            color: #0040ff;
+        }
+
+
+        </style>
+</head>
+<body id="topo">
+
+<a href="#topo" class="voltar-topo">↑ Topo</a>
+
+    <!--Cabecalho-->
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#Curriculum Vitae">Curriculum Vitae</a>
+            <a href="#contatos">Contatos</a>
+        </nav>
+    </header>
+
+
+    <!-- Foto de perfil -->
+     <div class="profile-container">
+     <h2>Minha Foto de Perfil</h2>
+
+    <img src="BERTc.jpg" alt="Foto de Perfil" class="profile-pic">
+
+     </div>
+
+<!--Conteudo Principal-->
+   <button> <section  id="sobre">
+        <h2 style="color: #000000;">Sobre Mim</h2>
+        <p  style="color: #000000;">Olá! Meu nome é Bernardo Junior, sou um desenvolvedor web iniciante apaixonado por tecnologia.</p>
+       <p  style="color: #000000;">Atualmente, estou aprendendo HTML, CSS e JavaScript, e gosto de criar projetos simples que me ajudam a melhorar minhas habilidades e explorar novas possibilidades no desenvolvimento front-end.</p>
+
+     <p  style="color: #000000;">Gosto de desafios, aprender coisas novas todos os dias e transformar ideias em páginas funcionais e bonitas.</p>
+
+     <p  style="color: #000000;">Nos meus momentos livres, costumo estudar design, explorar novas ferramentas e jogar alguns games para relaxar.</p>
+
+     <p  style="color: #000000;">O meu objetivo é de crescer como desenvolvedor, trabalhar em projetos interessantes e contribuir para a comunidade de tecnologia.</p>
+    
+            
+        
+    </section>
+    </button>
+<br><br><br><br><br><br><br>
+
+    <section id="projetos">
+        <h2 id="Projeto">Meus Projetos</h2>
+        <div class="projetos">
+            <div class="card">
+               <img src="qualquer.jpg" alt="">
+                <h3>Projeto 1</h3>
+               
+            </div>
+            <div class="card">
+                <img src="test.png" alt="Criacao de um Website">
+                <h3>Projeto 2</h3>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="Curriculum Vitae">
+        <h2>Curriculum Vitae </h2>
+        <div>
+         <a href="CV - Bernardo Bulaunde.pdf" target="_blank"> Ver meu CV</a>
+        </div>
+    </section>
+
+<section id="contatos">
+  <h2>Contato</h2>
+   <form>
+          <label>Nome:</label>
+          <input type="text" name="nome" placeholder="Seu nome" required>
+
+          <label>E-mail:</label>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+
+          <label>Mensagem:</label>
+          <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+
+          <input type="submit" value="Enviar">
+        
+         <div class="social-links" >
+            <p>Me acompanhe nas redes sociais</p>
+            <a href="https://github.com/">GitHub</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    
+        </form>
+</section>
+     
+
+
+</body>
+</html>
